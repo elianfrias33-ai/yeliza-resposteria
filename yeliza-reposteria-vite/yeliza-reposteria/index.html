@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yeliza Bizcochos y Algo Más · Bonao</title>
+<meta name="description" content="Bizcochos por encargo en Bonao: cumpleaños, bodas, baby shower y más. Pide por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo"><b>Yeliza</b><span>Bizcochos y algo más</span></a>
+    <div class="links"><a href="#disenos">Diseños</a><a href="#pedir">Cómo pedir</a><a href="#opiniones">Opiniones</a><a href="#ubicacion">Ubicación</a></div>
+    <a class="btn btn-wa wa" data-msg="Hola Yeliza, quiero encargar un bizcocho 🎂"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg><span>Pedir por WhatsApp</span></a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="intro">
+      <div class="eyebrow">Repostería por encargo · Bonao</div>
+      <h1>Bizcochos hechos <em>con amor</em> para tus momentos</h1>
+      <p class="lead">Cumpleaños, bodas, baby showers y celebraciones especiales. Cada bizcocho se prepara a mano, a tu gusto y a tiempo.</p>
+      <div class="cta">
+        <a class="btn btn-wa wa" data-msg="Hola Yeliza, quiero encargar un bizcocho 🎂"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Encargar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#disenos">Ver diseños</a>
+      </div>
+      <div class="rating"><b class="count" data-to="4.8">4.8</b><div><div class="stars">★★★★★</div><small>Valoración de nuestros clientes en Google</small></div></div>
+    </div>
+    <div class="hero-art">
+      <div class="slot"><img src="/fotos/portada.jpg" alt="Bizcocho de boda con rosas de Yeliza"></div>
+      <div class="tag t1"><i>🎂</i><div><b>Hecho a tu medida</b><small>Sabor, tamaño y diseño</small></div></div>
+      <div class="tag t2"><i>🚚</i><div><b>Delivery en Bonao</b><small>Puntuales en cada entrega</small></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="strip" id="strip"><div class="wrap"><span>Bizcochos por encargo</span><span>Entregas puntuales</span><span>Delivery y para llevar</span><span>4.8 en Google</span></div></div>
+
+<section id="disenos">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eyebrow">Nuestros diseños</div><h2>Elige tu bizcocho</h2><p class="lead">Inspírate con algunos de nuestros trabajos y pídelo tal cual o personalizado.</p></div>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="grid" id="gallery"></div>
+    <div class="more rv"><a class="btn btn-ghost" data-link="instagram" href="https://www.instagram.com/yeliza_bizcocho/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Ver más diseños en nuestro Instagram</a></div>
+  </div>
+</section>
+
+<section class="steps" id="pedir">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Así de fácil</div><h2>Cómo hacer tu pedido</h2></div>
+    <div class="grid">
+      <div class="step rv"><b>01</b><h3>Elige el diseño</h3><p>Escoge uno de la galería o cuéntanos tu idea.</p></div>
+      <div class="step rv"><b>02</b><h3>Escríbenos</h3><p>Envíanos por WhatsApp la fecha, sabor y cantidad de personas.</p></div>
+      <div class="step rv"><b>03</b><h3>Confirma tu pedido</h3><p>Te damos el precio y separas tu fecha con un anticipo.</p></div>
+      <div class="step rv"><b>04</b><h3>¡A celebrar!</h3><p>Retira en nuestro local o recíbelo con delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="order">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Pedido rápido</div>
+      <h2>Arma tu pedido en 1 minuto</h2>
+      <p class="lead">Completa los datos y se abrirá WhatsApp con tu pedido ya escrito. Solo tienes que enviarlo.</p>
+      <ul>
+        <li>Respuesta rápida por WhatsApp</li>
+        <li>Diseños personalizados para cada ocasión</li>
+        <li>Retiro en local o delivery en Bonao</li>
+      </ul>
+    </div>
+    <form id="orderForm" class="rv">
+      <label>Tu nombre<input name="nombre" required placeholder="Ej. María"></label>
+      <label>Tipo de bizcocho<select name="tipo"><option>Cumpleaños</option><option>Boda</option><option>Infantil</option><option>Bautizo</option><option>Baby shower</option><option>Bizcocho dominicano</option><option>Otro</option></select></label>
+      <label>Fecha del evento<input name="fecha" type="date" required></label>
+      <label>Cantidad de personas<input name="personas" type="number" min="1" placeholder="Ej. 25"></label>
+      <label>Sabor<select name="sabor"><option>Vainilla</option><option>Chocolate</option><option>Red velvet</option><option>Zanahoria</option><option>No sé, recomiéndame</option></select></label>
+      <label>Entrega<select name="entrega"><option>Retiro en el local</option><option>Delivery</option></select></label>
+      <label class="full">Detalles del diseño<textarea name="detalles" rows="3" placeholder="Colores, tema, nombre a escribir…"></textarea></label>
+      <button class="btn full" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Enviar pedido por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="reviews" id="opiniones">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eyebrow">Opiniones</div><h2>Lo que dicen nuestros clientes</h2></div>
+      <div class="score"><b class="count" data-to="4.8">4.8</b><div><div class="stars">★★★★★</div><small>Basado en opiniones de Google</small></div></div>
+    </div>
+    <div class="grid">
+      <div class="rev rv"><div class="stars">★★★★★</div><p>“Excelente servicio. Los bizcochos súper buenos.”</p><small>Freicy M. · Google</small></div>
+      <div class="rev rv"><div class="stars">★★★★★</div><p>“Me encantó cómo hacen el bizcocho, quedé muy satisfecha.”</p><small>Yvette G. · Google</small></div>
+      <div class="rev rv"><div class="stars">★★★★★</div><p>“Buen servicio y calidad, son puntuales en las entregas.”</p><small>Sandy V. · Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="ubicacion">
+  <div class="wrap">
+    <div class="box rv">
+      <div class="eyebrow">Visítanos</div>
+      <h2>Estamos en Bonao</h2>
+      <a class="row link" data-link="mapa" href="#" target="_blank" rel="noopener"><div><b>Dirección</b><span data-dato="direccion">Calle Luis Brito #1, Bonao 42000</span></div><em>Cómo llegar →</em></a>
+      <div class="row"><div><b>Horario</b><span data-dato="horario">Lunes a sábado · 8:00 AM – 6:00 PM</span></div></div>
+      <a class="row link wa" data-msg="Hola Yeliza, quiero información sobre un bizcocho 🎂"><div><b>WhatsApp</b><span data-dato="telefono">(809) 668-9191</span></div><em>Escribir →</em></a>
+      <a class="row link" data-link="instagram" href="https://www.instagram.com/yeliza_bizcocho/" target="_blank" rel="noopener"><div><b>Nuestro Instagram</b><span data-dato="instagramUsuario">@yeliza_bizcocho</span></div><em>Ver fotos →</em></a>
+      <div class="row"><div><b>Entrega</b><span data-dato="entrega">Para llevar y delivery</span></div></div>
+    </div>
+    <div class="map rv">
+      <div class="pin">Calle Luis Brito #1, Bonao</div>
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa" data-link="mapaEmbed" src="about:blank"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap rv">
+    <div class="eyebrow">¿Tienes una celebración?</div>
+    <h2>Hagamos el bizcocho <em>perfecto</em></h2>
+    <p class="lead" style="margin:0 auto 30px">Escríbenos y te ayudamos a elegir el diseño ideal.</p>
+    <a class="btn btn-wa wa" data-msg="Hola Yeliza, quiero encargar un bizcocho 🎂"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Yeliza Bizcochos y Algo Más · Bonao, R.D.</span><span><a data-link="instagram" href="https://www.instagram.com/yeliza_bizcocho/" target="_blank" rel="noopener">Instagram @yeliza_bizcocho</a> · Web por NOVIX Studio</span></div></footer>
+
+<a class="float wa" data-msg="Hola Yeliza, quiero encargar un bizcocho 🎂" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+
+<svg width="0" height="0" style="position:absolute"><symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.09c-.24.68-1.42 1.3-1.95 1.34-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.6.46.23.54.77 1.88.84 2.02.07.13.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.6-.14.25.09 1.58.75 1.85.88.27.13.45.2.52.31.07.11.07.65-.17 1.33z"/></symbol></svg>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
